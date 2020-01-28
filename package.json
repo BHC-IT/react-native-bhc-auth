@@ -1,10 +1,10 @@
 {
 	"name": "@bhc/react-native-bhc-auth",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "",
 	"main": "index.js",
 	"dependencies": {
-		"jwt-decode": "^2.2.0"
+		"jwt-decode": "^2.2.0",
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"

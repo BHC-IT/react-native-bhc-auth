@@ -17,7 +17,7 @@ exports.default =  class XMLHttpRequestAsync {
 			if (!this.onLoadSet)
 				this.onload(function(){
 					if (this.status > 300)
-						reject({status:this.status, ...(JSON.parse(this.response))})
+						reject({status:this.status, response:this.response ? this.response : this.responseText})
 					else
 						resolve(this.response ? this.response : this.responseText);
 				});

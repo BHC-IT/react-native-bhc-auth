@@ -1,4 +1,5 @@
-const {bhcAuth, getQuery} = require('./bhcAuthWrapper');
+const bhcAuth = require('./bhcAuthWrapper').default;
+const getQuery = require('./bhcAuthWrapper').getQuery;
 const jwt = require('jwt-decode');
 
 exports.default = class User {

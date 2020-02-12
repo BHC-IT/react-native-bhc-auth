@@ -11,9 +11,9 @@ exports.default = class bhcAuth {
 	constructor(client_ID, client_secret, stage = "prod"){
 		this.client_ID = client_ID;
 		this.client_secret = client_secret;
-		this.query = new Query(stage === "prod" ? "86.252.240.205:9090" : stage);
+		this.query = new Query(stage === "prod" ? "81.249.225.236:9090" : stage);
 		if (getUri() === null)
-			setUri(stage === "prod" ? "86.252.240.205:9090" : stage);
+			setUri(stage === "prod" ? "81.249.225.236:9090" : stage);
 		if (getQuery() === null)
 			setQuery(this.query)
 	}
